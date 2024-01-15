@@ -1,0 +1,70 @@
+import { VerticalBox } from "std-widgets.slint";
+
+export component AppWindow inherits Window {
+    title: "Warp GUI App";
+    in-out property <int> connectionState: 0;
+    callback toggle();
+    preferred-height: 600px;
+    preferred-width: 400px;
+    background: rgb(10, 10, 01);
+    max-width: 500px;
+    GridLayout {
+        padding: 50px;
+        spacing: 70px;
+        Row {
+            Text {
+                text: "WARP";
+                vertical-alignment: center;
+                horizontal-alignment: center;
+                font-family: "Font Awesome 6 Free";
+                font-size: 100px;
+                font-weight: 200;
+                color: rgb(255, 165, 0);
+                height: 100px;                
+            }
+        }
+        Row {
+            Rectangle {
+                Rectangle {
+                    x: parent.width / 3;
+                    height: 50px;
+                    width: parent.width / 3 ;
+                    border-radius: 20px;
+                    background: rgb(255, 213, 128);
+                    TouchArea {
+                        clicked => {
+                            root.toggle();
+                        }
+                    }
+                }
+                Rectangle {
+                    x: connectionState == 1 ? 2 * parent.width / 3 - 30px: parent.width / 3 - 30px;
+                    height: 60px;
+                    width: 60px ;
+                    border-radius: 40px;
+                    background: connectionState == 1 ? rgb(0, 200, 0) : rgb(255, 0, 0);
+                    animate x {
+                        duration: 150ms;
+                        easing: ease-in-out;
+                    }
+                    TouchArea {
+                        clicked => {
+                            root.toggle();
+                        }
+                    }
+                }
+
+            }
+        }
+        Row {
+            Text {
+                text: connectionState == 0 ? "Disconnected": connectionState == 1 ? "Connected": "Connecting...";
+                horizontal-alignment: center;
+                font-size: 30px;
+                font-family: "Font Awesome 6 Free";
+                color: connectionState == 1 ? rgb(0, 255, 0):  rgb(255, 0, 0);
+            }
+        }
+    }
+
+}
