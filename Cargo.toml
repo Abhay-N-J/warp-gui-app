@@ -2,7 +2,7 @@
 name = "warp-gui-app"
 version = "0.1.2"
 authors = ["AbhayJo"]
-edition = "2021"
+edition = "2023"
 build = "build.rs"
 description = "Cloudflare Warp GUI client"
 license-file = "LICENSE"
