@@ -19,7 +19,6 @@ Note: warp-sys-tray from https://github.com/Abhay-N-J/warp-sys-tray is optional 
 ## Uninstallation
 
     $ cargo uninstall warp-gui-app
-    $ cargo uninstall warp-sys-tray (optional)
 
 
 ### Todo
