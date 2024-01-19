@@ -5,6 +5,7 @@ authors = ["AbhayJo"]
 edition = "2021"
 build = "build.rs"
 description = "Cloudflare Warp GUI client"
+license = "MIT or Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
