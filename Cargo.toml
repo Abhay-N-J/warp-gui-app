@@ -5,7 +5,6 @@ authors = ["AbhayJo"]
 edition = "2021"
 build = "build.rs"
 description = "Cloudflare Warp GUI client"
-publish = [ "warp-gui-app" ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
