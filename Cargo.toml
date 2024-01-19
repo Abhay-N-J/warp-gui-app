@@ -6,7 +6,7 @@ edition = "2021"
 build = "build.rs"
 description = "Cloudflare Warp GUI client"
 license-file = "LICENSE"
-repository = "https://github.com/Abhay-N-J/warp-gui-app/warp-gui-app"
+repository = "https://github.com/Abhay-N-J/warp-gui-app"
 keywords = ["cli", "GUI", "Warp", "warp-cli", "warp-gui"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
