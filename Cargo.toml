@@ -14,5 +14,5 @@ slint = "1.0"
 [build-dependencies]
 slint-build = "1.0"
 
-[bin]
+[[bin]]
 name = "warp-gui-app"
