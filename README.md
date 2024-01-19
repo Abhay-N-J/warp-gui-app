@@ -4,15 +4,19 @@ This is a Warp Client Gui app built for linux and uses warp-cli to handle the co
 
 ## Installation
 
-Install warp-cli and register with warp-cli register.
+Install cargo, rustup, warp-cli and register with warp-cli register.
 
-Then install with either cargo:
+Then install from crates.io:
 
     $ cargo install warp-gui-app
     
 Or from source:
 
     $ git clone https://github.com/Abhay-N-J/warp-gui-app
+    $ cd warp-gui-app
+    $ cargo build --release
+    or 
+    $ cargo install --git https://github.com/Abhay-N-J/warp-gui-app
 
 Note: warp-sys-tray from https://github.com/Abhay-N-J/warp-sys-tray is optional to enable System tray.
 
